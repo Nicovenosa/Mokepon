@@ -1,0 +1,373 @@
+@import url(//db.onlinewebfonts.com/c/08f5d0ff76c06129945cdef56193e70a?family=Blood+Crow);
+
+html{
+    background-image: url(https://images7.alphacoders.com/101/thumb-1920-1011911.jpg);
+    
+}
+
+
+h2{
+    color: white;
+    font: 28pt "Blood Crow";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+p{
+    color: white;
+    font: 16pt "Blood Crow";
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/* pagina 1 */
+
+.title{
+    color: white;
+    font-family: "Blood Crow";
+    font-size: 44px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-diseño{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.input-pos{
+    display: flex;
+    flex-direction: column;
+}
+input:checked{
+    height: 22px;
+}
+
+
+
+.tarjeta-mokepon{
+    width: 200px;
+    height: 125px;
+    /* centrado de  */
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    /* overlay */
+    box-shadow: 0 0 0 100px inset, 0 0 5px rgb(173, 15, 15); /*iluminacion de fondo
+    */
+    transition: box-shadow 1s;
+    margin: 10px;
+}
+
+.tarjeta-mokepon::after {
+    width: 85%;
+    height: 80%;
+    display: block;
+    font: 19pt "Blood Crow";
+    color: white;
+    border: 2px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*velo de transition*/
+    transition: opacity 1s .5s;
+
+}
+
+.tarjeta-mokepon:hover{
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
+}
+
+.tarjeta-mokepon:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#mascotas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+#subclass1 {
+    background-image: url(http://pm1.narvii.com/7232/09960125f6ee22d04c51610eafaff36b598ca82ar1-888-1116v2_00.jpg);
+    color: rgba(47,166,195, .75);
+    background-position-x: 203px;
+    background-position-y: -63px;
+}
+
+#subclass1::after {
+    content: "Tanjiro"
+
+}
+
+#subclass2 {
+    background-image: url(https://i.pinimg.com/originals/06/86/ac/0686ac10026df9f604433adf39b93de4.jpg);
+    color: rgba(211, 179, 90, 0.75);
+    background-position-x: 550px;
+    background-position-y: -342px;
+}
+
+#subclass2::after {
+    content: "Rengoku"
+
+}
+
+#subclass3 {
+    background-image: url(https://cdn.alfabetajuega.com/alfabetajuega/2021/06/Pilar-del-Insecto-Shinobu-Kocho.jpg);
+    color: rgb(99, 38, 38, .75);
+    background-position-x: 584px;
+    background-position-y: -163px;
+}
+
+#subclass3::after {
+    content: "Shinobu"
+}
+
+#boton-mascota{
+    display: flex;
+    font: 19pt "Blood Crow";
+    color: rgba(0, 0, 0, 1);
+    background-position-x: 584px;
+    background-position-y: -163px;
+    box-shadow: 0 0 0 100px inset, 0 0 5px black
+    
+    
+}
+
+#boton-mascota{ 
+    
+    width: 142px;
+    height: 47px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 100px inset, 0 0 5px black;
+    transition: box-shadow 1s;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+#boton-mascota:hover::after {
+    width: 101%;
+    height: 80%;
+    display: block;
+    font: 19pt "Blood Crow";
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*velo de transition*/
+    
+}
+
+#boton-mascota:after {
+    font: 19pt "Blood Crow";
+    color: white;
+    content: "Selección"
+
+}
+
+/*----------------------------------------------------------------------------- */
+
+/* */
+/* pagina 2 */
+
+#ataques{
+    flex-direction: column;
+    align-items: center;
+    
+}
+.boton-ataque{
+    width: 200px;
+    height: 125px;
+    /* centrado de  */
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    /* overlay */
+    box-shadow: 0 0 0 100px inset, 0 0 5px rgb(173, 15, 15); /*iluminacion de fondo
+    */
+    transition: box-shadow 1s;
+    margin: 10px;
+}
+
+
+.boton-ataque::after {
+    width: 85%;
+    height: 80%;
+    display: block;
+    font: 19pt "Blood Crow";
+    color: white;
+    border: 2px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*velo de transition*/
+    transition: opacity 1s .5s;
+
+}
+
+.boton-ataque:hover{
+    box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+    transition: box-shadow 1s;
+}
+
+.boton-ataque:hover::after {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#boton-agua {
+    background-image: url(http://pm1.narvii.com/7232/09960125f6ee22d04c51610eafaff36b598ca82ar1-888-1116v2_00.jpg);
+    color: rgba(47,166,195, .75);
+    background-position-x: 203px;
+    background-position-y: -63px;
+    }
+
+#boton-agua::after {
+    content: "Agua"
+
+}
+
+#boton-fuego {
+    background-image: url(https://i.pinimg.com/originals/06/86/ac/0686ac10026df9f604433adf39b93de4.jpg);
+    color: rgba(211, 179, 90, 0.75);
+    background-position-x: 550px;
+    background-position-y: -342px;
+}
+
+#boton-fuego::after {
+    content: "Fuego"
+
+}
+
+#boton-tierra {
+    background-image: url(https://cdn.alfabetajuega.com/alfabetajuega/2021/06/Pilar-del-Insecto-Shinobu-Kocho.jpg);
+    color: rgb(99, 38, 38, .75);
+    background-position-x: 584px;
+    background-position-y: -163px;
+}
+
+#boton-tierra::after {
+    content: "Tierra"
+}
+
+
+#mensajes{
+    width: 280px;
+    height: 108px;
+    padding: 8px;
+    margin-top: 22px;
+    margin-bottom: 18px;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset{
+    width: 280px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#boton-reset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 19pt "Blood Crow";
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 0 100px inset, 0 0 5px black;
+    transition: box-shadow 0.5s;
+   
+}
+
+#boton-reset:hover::after {
+    
+    display: block;
+    font: 14pt "Blood Crow";
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*velo de transition*/
+    
+}
+
+#boton-reset:after {
+    font: 17pt "Blood Crow";
+    color: white;
+    content: "Reset"
+
+}
+
+.gridAtaques{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    text-align: center;
+   
+}
+#mascota1{
+    font: 32pt "Blood Crow";
+    color: white;
+    background-color: black;
+    width: 48px;
+    height: 55px;
+    border-radius: 52%;
+    margin: 36%;
+    margin-bottom: 0%;
+    margin-top: 1%;
+    padding: 0%;
+}
+p #mascota1{
+   display: flex;
+   justify-content: center;
+    align-items: center; 
+}
+#mascota2{
+    font: 32pt "Blood Crow";
+    color: white;
+    background-color: black;
+    width: 48px;
+    height: 55px;
+    border-radius: 52%;
+    margin: 36%;
+    margin-bottom: 0%;
+    margin-top: 1%;
+    padding: 0%;
+}
+p #mascota2{
+   display: flex;
+   justify-content: center;
+    align-items: center; 
+}
+/*
+@media (max-width: 360px){
+    .tarjeta-diseño {
+        flex-direction: column;
+    }
+}*/

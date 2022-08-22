@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>MOKEPON</title>
+        <link rel="stylesheet" href="./index.css">
+        <meta name="viewport" content="width=divice-width, inictial-scale=1.0">
+        
+    </head>
+    <body>
+        
+        <section id="mascotas">
+           
+            <h1 class="title">MOKEPON</h1>
+            
+            <h2>Elige a tu mascota: </h2>
+
+           <div class="tarjeta-diseño">
+
+             <div class="input-pos"> 
+                <label class="tarjeta-mokepon" id="subclass1" for="Tanjiro"></label>
+                <input type="radio" id="Tanjiro" name="selecion">
+                
+            </div>
+                <div class="input-pos"> 
+                <label class="tarjeta-mokepon" for="Rengoku" id="subclass2"></label> 
+                <input type="radio" id="Rengoku" name="selecion">
+            </div>
+
+            <div class="input-pos"> 
+                <label class="tarjeta-mokepon" for="Shinobu" id="subclass3"></label>
+                <input type="radio" id="Shinobu" name="selecion">
+            </div>
+            
+            </div>
+
+            <div id="botonMascota">
+                <button id="boton-mascota"></button>
+            </div>
+
+        </section>
+
+
+        <section id="ataques">
+
+            <h1 class="title">MOKEPON</h1>
+
+            <h2>Elige a tu Ataque: </h2>
+
+            <div class="tarjeta-diseño">
+
+                <button class="boton-ataque" id="boton-agua"></button>
+
+                <button class="boton-ataque" id="boton-fuego"></button>
+
+                <button class="boton-ataque" id="boton-tierra"></button>
+
+            </div>
+
+            <div id="mensajes">
+                
+                <section id="reset">
+                    <p id="resultado"></p>
+                    <button id="boton-reset"></button>
+                   
+                </section>
+                
+            </div>
+
+            <div class="gridAtaques">
+                <div id="player1">
+                    <p id="mascota1">3</p> 
+                    <p id="nombreSelecion1"></p>
+                    <div id="ataque-Jugador"></div>
+                </div>
+                
+                <div id="player2">
+                    <p id="mascota2">3</p> 
+                    <p id="nombreSelecion2"></p>
+                    <div id="ataqueMaquina"></div>
+                    
+                </div>
+
+            </div>
+            
+        </section>
+        
+        <script src="./js/mokepon.js"></script> 
+    </body>
+
+</html>
